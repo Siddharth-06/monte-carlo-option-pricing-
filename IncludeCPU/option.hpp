@@ -1,5 +1,5 @@
-#pragma once
-#include <cmath>
+#ifndef OPTION_HPP
+#define OPTION_HPP
 
 struct OptionParameters {
     double S0;
@@ -8,7 +8,9 @@ struct OptionParameters {
     double sigma;
     double T;
 };
-__host__ __device__
+
 inline double payoff(double ST, double K) {
-    return ST > K ? ST - K : 0.0;
+    return (ST > K) ? (ST - K) : 0.0;
 }
+
+#endif

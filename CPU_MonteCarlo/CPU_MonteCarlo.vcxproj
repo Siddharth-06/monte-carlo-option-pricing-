@@ -123,19 +123,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\CUDA_MonteCarlo\main.cpp" />
-    <ClCompile Include="..\CUDA_MonteCarlo\MonteCarloMT.cpp" />
-    <ClCompile Include="..\CUDA_MonteCarlo\MonteCarloST.cpp" />
+    <ClCompile Include="..\CPU_MonteCarlo\main.cpp" />
+    <ClCompile Include="..\CPU_MonteCarlo\MonteCarloMT.cpp" />
+    <ClCompile Include="..\CPU_MonteCarlo\MonteCarloST.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\CUDA_MonteCarlo\black_scholes.hpp" />
-    <ClInclude Include="..\CUDA_MonteCarlo\gbm.hpp" />
-    <ClInclude Include="..\CUDA_MonteCarlo\MonteCarloMT.hpp" />
-    <ClInclude Include="..\CUDA_MonteCarlo\MonteCarloST.hpp" />
-    <ClInclude Include="..\CUDA_MonteCarlo\option.hpp" />
-    <ClInclude Include="..\CUDA_MonteCarlo\result.hpp" />
-    <ClInclude Include="..\CUDA_MonteCarlo\stats.hpp" />
-    <ClInclude Include="..\CUDA_MonteCarlo\timer.hpp" />
+    <ClInclude Include="..\IncludeCPU\black_scholes.hpp" />
+    <ClInclude Include="..\IncludeCPU\gbm.hpp" />
+    <ClInclude Include="..\IncludeCPU\MonteCarloMT.hpp" />
+    <ClInclude Include="..\IncludeCPU\MonteCarloST.hpp" />
+    <ClInclude Include="..\IncludeCPU\option.hpp" />
+    <ClInclude Include="..\IncludeCPU\result.hpp" />
+    <ClInclude Include="..\IncludeCPU\stats.hpp" />
+    <ClInclude Include="..\IncludeCPU\timer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

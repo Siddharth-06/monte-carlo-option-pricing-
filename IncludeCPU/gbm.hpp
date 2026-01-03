@@ -1,5 +1,8 @@
-#pragma once
+#ifndef GBM_HPP
+#define GBM_HPP
+
 #include <cmath>
+#include "option.hpp"
 
 struct GBrownianPrecompute {
     double drift;
@@ -7,20 +10,20 @@ struct GBrownianPrecompute {
     double discount;
 };
 
-__host__ __device__
 inline GBrownianPrecompute precompute(const OptionParameters& opt) {
     return {
         (opt.r - 0.5 * opt.sigma * opt.sigma) * opt.T,
-        opt.sigma * sqrt(opt.T),
-        exp(-opt.r * opt.T)
+        opt.sigma * std::sqrt(opt.T),
+        std::exp(-opt.r * opt.T)
     };
 }
 
-__host__ __device__
 inline double gbm_terminal_price(
     double S0,
     const GBrownianPrecompute& gbm,
     double Z
 ) {
-    return S0 * exp(gbm.drift + gbm.diffusion * Z);
+    return S0 * std::exp(gbm.drift + gbm.diffusion * Z);
 }
+
+#endif

@@ -1,8 +1,8 @@
-#include "MonteCarloMT.hpp"
+#include "../IncludeCPU/MonteCarloMT.hpp"
 
-#include "gbm.hpp"
-#include "stats.hpp"
-#include "option.hpp"
+#include "../IncludeCPU/gbm.hpp"
+#include "../IncludeCPU/stats.hpp"
+#include "../IncludeCPU/option.hpp"
 
 #include <random>
 #include <thread>

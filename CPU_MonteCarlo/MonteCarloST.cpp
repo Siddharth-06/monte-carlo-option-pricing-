@@ -1,12 +1,12 @@
 
-#include "MonteCarloST.hpp"
+#include "../IncludeCPU/MonteCarloST.hpp"
 
-#include "gbm.hpp"
-#include "stats.hpp"
-#include "option.hpp"
+#include "../IncludeCPU/gbm.hpp"
+#include "../IncludeCPU/stats.hpp"
+#include "../IncludeCPU/option.hpp"
 
 #include <random>
-#include "black_scholes.hpp"
+#include "../IncludeCPU/black_scholes.hpp"
 
 Result MonteCarloSingleThread(
     const OptionParameters& opt,

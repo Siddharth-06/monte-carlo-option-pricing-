@@ -5,9 +5,9 @@
 #include <cmath>
 #include <chrono>
 
-#include "option.hpp"
-#include "gbm.hpp"
-#include "stats.hpp"
+#include "../IncludeGPU/option.hpp"
+#include "../IncludeGPU/gbm.hpp"
+#include "../IncludeGPU/stats.hpp"
 
 __global__ void MonteCarloKernelCV(
     OptionParameters opt,

@@ -2,12 +2,12 @@
 #include <thread>
 #include <cmath>
 
-#include "option.hpp"
-#include "result.hpp"
-#include "timer.hpp"
-#include "MonteCarloST.hpp"
-#include "MonteCarloMT.hpp"
-#include "black_scholes.hpp"
+#include "../IncludeCPU/option.hpp"
+#include "../IncludeCPU/result.hpp"
+#include "../IncludeCPU/timer.hpp"
+#include "../IncludeCPU/MonteCarloST.hpp"
+#include "../IncludeCPU/MonteCarloMT.hpp"
+#include "../IncludeCPU/black_scholes.hpp"
 
 int main() {
     OptionParameters opt{
