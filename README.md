@@ -118,7 +118,7 @@ All methods use identical option parameters and variance-reduction techniques.
 | Method | Time (ms) | Price | Std Error |
 |------|----------|------|-----------|
 | CPU – Single Thread | 286.77 | 10.4500 | 0.00087 |
-| CPU – Multi Thread (32 threads) | 43.90 | 10.4503 | 0.00087 |
+| CPU – Multi Thread (32 threads) | 31.56 | 10.4503 | 0.00087 |
 | GPU (Antithetic + CV) | **3.08** | 10.4471 | 0.00717 |
 | Black–Scholes (Exact) | — | **10.4506** | — |
 
